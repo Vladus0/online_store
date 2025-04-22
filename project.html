@@ -8,9 +8,35 @@
 </head>
     <body>
         <main>
-
+            
             <div class="products">
-                
+                <div class="products__add products__card">
+                    <img src="img/add.svg" class="img__add">
+                    <div class="form__fields">
+                        <form class="add__form">
+                            <label>Путь до изображения</label>
+                            <input class="form__image-path text-field" id="image-path" required>
+                            <label>Оценка</label>
+                            <input class="form__rating text-field" id="rating" required>
+                            <label>Ккал</label>
+                            <input class="form__value text-field" id="value" required>
+                            <label>Название</label>
+                            <input class="form__name text-field" id="name" required>
+                            <label>Цена</label>
+                            <input class="form__cost text-field" id="cost" required>
+                        </form>
+                        <div class="button-block" data-="">
+                            <button class="form__button">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal__title">Вы уверены, что хотите удалить данную карточку?</div>
+                <div class="modal__buttons">
+                    <button id="yes" class="modal__button">Да</button>
+                    <button id="no" class="modal__button">Нет</button>
+                </div>
             </div>
     
         </main>
